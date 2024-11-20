@@ -1,0 +1,388 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#head {
+    background-image: url("./image/macbook_mouse.jpg");
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: opacity(0.9);
+    background-attachment: fixed;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    color: rgb(189, 193, 201);
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    height: 50vh;
+}
+
+.social ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+    width: 25vw;
+    list-style: none;
+    column-gap: 15px;
+    margin: 10px;
+}
+
+.name>div h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.social ul li a {
+    border-radius: 60%;
+    padding: 10px;
+}
+
+.social ul li a:hover {
+    box-shadow: inset 3px 3px 5px whitesmoke;
+}
+
+#about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#img {
+    width: 12rem;
+    height: 12rem;
+}
+
+#about img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-top: -5rem;
+    position: relative;
+    z-index: 10;
+    border: 5px solid gray;
+    box-shadow: 3px 3px 3px 1px rgba(154, 154, 154, 0.594);
+
+}
+
+#about p {
+    width: 80%;
+    padding: 1.5rem;
+    margin: 1.2rem;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -12vh;
+}
+
+.blue {
+    color: blue;
+}
+
+#Skils {
+    height: auto;
+    width: 80%;
+    padding-left: 25%;
+    padding-right: 10%;
+    margin: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+
+}
+
+.skill-progress {
+    width: 10rem;
+    height: 2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    border-radius: 30px;
+    background-color: gray;
+    font-weight: 600;
+
+}
+
+.sk {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.eight {
+    width: 80%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: yellow;
+}
+
+.seven {
+    width: 70%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: orange;
+}
+
+.six {
+    width: 60%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgba(236, 123, 123, 0.767);
+}
+
+.timeline {
+    position: relative;
+    width: 76%;
+    left: 12%;
+}
+
+.timebox {
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 160px;
+    margin: 8px;
+    padding: 10px;
+}
+
+.timebox:nth-child(2n) {
+    left: 55%;
+}
+
+.timebox img {
+    width: 3rem;
+}
+
+.timebox p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.timediv {
+    position: absolute;
+    height: 78%;
+    width: 0px;
+    border: 3px dashed skyblue;
+    top: 10%;
+    left: 50%;
+}
+
+.icon {
+    position: sticky;
+    z-index: 2;
+    top: 85%;
+    transform: rotate(90deg);
+    font-size: 30px;
+}
+
+.timebox:nth-child(2n+1)::after {
+    content: " ";
+    position: absolute;
+    right: -12%;
+    z-index: 1;
+    top: 30%;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.timebox:nth-child(2n)::after {
+    content: " ";
+    position: absolute;
+    right: 113%;
+    z-index: 1;
+    top: 30%;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+#projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+
+}
+
+.bproject {
+    flex-basis: calc(25% - 20px);
+    height: auto;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.bproject img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.bproject img:hover {
+    filter: brightness(50%);
+    border: 2px dotted black;
+}
+
+.contact-form-container {
+    background: #f4f4f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.contact-form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+
+.contact-form-container .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form-container .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form-container .form-group input,
+.contact-form-container .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form-container .form-group input:focus,
+.contact-form-container .form-group textarea:focus {
+    border-color: #007bff;
+}
+
+.contact-form-container .form-group textarea {
+    resize: vertical;
+}
+
+.contact-form-container .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container .submit-btn:hover {
+    background-color: #0056b3;
+}
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color: #0056b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 576px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .name>div h1 {
+        font-size: 30px;
+    }
+
+    #about p {
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    #Skils {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .skill-progress {
+        width: 90%;
+        margin: 0.5rem auto;
+    }
+
+    .timeline {
+        width: 90%;
+        left: 5%;
+    }
+
+    .bproject {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .contact-form-container {
+        width: 95%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
