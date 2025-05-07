@@ -207,7 +207,7 @@ li a {
 }
 
 .icon {
-    position: static;
+    position: sticky;
     z-index: 2;
     top: 85%;
     transform: rotate(90deg);
